@@ -1,0 +1,42 @@
+package productsAppleStore;
+
+public class Iphone extends Product {
+	//Initializing data
+	//Initializing count as private and static
+	private static int count = 0;
+	//private int memory = 16;
+	//private int camera_pixels = 8;
+	
+	/**
+	 * Default constructor
+	 */
+	public Iphone() {
+		super();
+		Iphone.incrementCount();
+		// TODO Auto-generated constructor stub
+	}
+	
+	/**
+	 * Constructor with cost
+	 */
+	public Iphone(int cost, String prodName){
+		super(cost, prodName);
+	}
+	
+	public void temp(){
+		System.out.println("Method from iphone");
+	}
+	/**
+	 * Method to increment the iphone count
+	 */
+	private static void incrementCount(){
+		Iphone.count++;
+	}
+	
+	/**
+	 * Method to get Iphone count 
+	 */
+	public static void getCount(){
+		System.out.println(Iphone.count);
+	}
+}
